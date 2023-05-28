@@ -199,7 +199,36 @@ void sterge(int v[], int& d, int p) {
 void stergereElementeDuplicate(int v[], int& d) {
 	for (int i = 0; i < d; i++) {
 		if (v[i] == v[i + 1]) {
-			sterge(v, d, i+1);
+			sterge(v, d, i);
 		}
 	}
 } 
+int oglindit(int n) {
+	int ogl = 0;
+	while (n != 0) {
+		int c = n % 10;
+		n = n / 10;
+		ogl = ogl * 10 + c;
+	}
+	return ogl;
+}
+void afisarePerechiOglindi(int v[], int d) {
+	for (int i = 0; i < d; i++) {
+		for (int j = 0; j < d; j++) {
+			if (oglindit(v[i]) == v[j]) {
+				cout << v[i] << " " << v[j] << endl;
+			}
+		}
+	}
+}
+int produsMax(int v[], int d) {
+	int max = elementMax(v, d);
+	int max2 = 0;
+	for (int i = 0; i < d; i++) {
+		if (v[i] != max && v[i] > max2) {
+			max2 = v[i];
+		}
+	}
+	int prod = max * max2;
+	return prod;
+}

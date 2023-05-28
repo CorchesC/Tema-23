@@ -96,3 +96,14 @@ void sol9() {
 	stergereElementeDuplicate(v, d);
 	afisareVector(v, d);
 }
+void sol10() {
+	int v[100], d = 0;
+	citireVector(v, d);
+	afisarePerechiOglindi(v, d);
+}
+void sol11() {
+	int v[100], d = 0;
+	citireVector(v, d);
+	int prod = produsMax(v, d);
+	cout << prod << endl;
+}
