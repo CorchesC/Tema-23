@@ -10,6 +10,8 @@ int main()
 	//sol6();
 	//sol7();
 	//sol8();
-	sol9();
+	//sol9();
+	//sol10();
+	sol11();
 }
 
