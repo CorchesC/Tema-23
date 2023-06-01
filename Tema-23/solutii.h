@@ -183,3 +183,163 @@ void sol26() {
 	afisareMatrici(x, m, n); (x, m, n);
 
 }
+void sol27() {
+	int v[100], d = 0;
+	citireVector(v, d);
+	int fc = celMaiMicFactorPrim(v, d);
+	cout << fc << endl;
+}
+void sol28() {
+	int v[100], d = 0;
+	citireVector(v, d);
+	int nr = nrPerechiPrimeIntreEle(v, d);
+	cout << nr << endl;
+}
+void sol29() {
+	cout << "Introduceti numarul: " << endl;
+	int n;
+	cin >> n;
+	eliminareCifrePareSiCreeareNrNou(n);
+}
+void sol30() {
+	int x[100][100], m = 0, n = 0;
+	citireMatrici(x, m, n);
+	celMaiMareNumarParDePeLinieCuPrimulNumarImpar(x, m, n);
+}
+void sol31() {
+	int v[100], d = 0;
+	citireVector(v, d);
+	elementeCuNumarDeAparitii(v, d);
+}
+void sol32() {
+	int v[100], d = 0;
+	citireVector(v, d);
+	stergereElementeDuplicate(v, d);
+	afisareVector(v, d);
+}
+void sol33() {
+	int d = 0;
+	int mat[200];
+	int rom[200];
+	int inf[200];
+	citireVector(mat, d);
+	citireVector2(rom, d);
+	citireVector3(inf, d);
+	auCelPutinNota5SiMedia7(mat, rom, inf, d);
+}
+void sol34() {
+	cout << "Introduceti numarul: " << endl;
+	int n;
+	cin >> n;
+	int v[100], d = 0;
+	vectorPrimCuNMaiMicCaN(n, v, d);
+	afisareVector(v, d);
+}
+void sol35() {
+	int v[100], d = 0;
+	citireVector(v, d);
+	stergereElementeDuplicateConsecutive(v, d);
+	afisareVector(v, d);
+}
+void sol36() {
+	int v[100], d = 0;
+	citireVector(v, d);
+	cout << "Introduceti numarul: " << endl;
+	int n;
+	cin >> n;
+	inserareCelMaiMicDivPrimAlLuiNInvectorDacaNuExista(n,v, d);
+	afisareVector(v, d);
+}
+void sol37() {
+	int x[100][100], m = 0, n = 0;
+	citireMatrici(x, m, n);
+	stergereMijloc(x, m, n);
+	afisareMatrici(x, m, n);
+}
+void sol38() {
+	int x[100][100], m = 0, n = 0;
+	citireMatrici(x, m, n);
+	schimbareLiniiCuNumarulDeUnuPeColoane(x, m, n);
+	afisareMatrici(x, m, n);
+}
+void sol39() {
+	int x[100][100], m = 0, n = 0;
+	citireMatrici(x, m, n);
+	bool aff = existaOColoanaDoarCuX(x, m, n);
+	aff == true 
+		?
+		cout << "Exista cel putin o coloana doar cu caracterul X" << endl
+		:
+		cout << "Nu exista cel putin o coloana doar cu caracterul X" << endl;
+
+}
+void sol40() {
+	int x[100][100], m = 0, n = 0;
+	citireMatrici(x, m, n);
+	double ma = mediaAritmeticaAValorilorMinimeDePeColoaneOrdonateStrictCrescator(x, m, n);
+	cout << ma << endl;
+}
+void sol41() {
+	int x[100][100], m = 0, n = 0;
+	citireMatrici(x, m, n);
+	schimbareElementeParePanaIn3CifreCuMaxDiagPrincipala(x, m, n);
+	afisareMatrici(x, m, n);
+}
+void sol42() {
+	cout << "Introduceti n: " << endl;
+	int n;
+	cin >> n;
+	cout << "Introduceti m: " << endl;
+	int m;
+	cin >> m;
+	cout << "Introduceti nr de cifre: " << endl;
+	int k;
+	cin >> k;
+	afisareNrDivCuNSiM(n, m, k);
+}
+void sol43() {
+	int v[100], d = 0;
+	citireVector(v, d);
+	afisareNrCuNrMaxDeAparitii(v, d);
+}
+void sol44() {
+	int v[100], d = 0;
+	citireVector(v, d);
+	afisareCrescatoare(v, d);
+}
+void sol45() {
+	int v[100], d = 0;
+	citireVector(v, d);
+	afisareNrCuNrMinDeAparitii(v, d);
+}
+void sol46() {
+	int v[100], d = 0;
+	citireVector(v, d);
+	cout << "Introduceti pozitia: " << endl;
+	int k;
+	cin >> k;
+	int nr = nrPePozitaKDesc(v, d, k);
+	cout << nr << endl;
+}
+void sol47() {
+	int v[100], d = 0;
+	citireVector(v, d);
+	afisareInOrdineCrescatoarePalindroameCu6CifreImpare(v, d);
+}
+void sol48() {
+	int v[100], d = 0;
+	citireVector(v, d);
+	vectorCuNumereInterioareAleNumerelorCuPcUcEgale(v, d);
+}
+void sol49() {
+	int v[100], d = 0;
+	citireVector(v, d);
+	int lmax = lungimeMaxSecventeCuPcEgala(v, d);
+	cout << lmax << endl;
+}
+void sol50() {
+	int v[100], d = 0;
+	citireVector(v, d);
+	int min = nrCuAparitiiMinime(v, d);
+	cout << min << endl;
+}

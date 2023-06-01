@@ -37,5 +37,8 @@
     <Text Include="numere2.txt">
       <Filter>Header Files</Filter>
     </Text>
+    <Text Include="numere3.txt">
+      <Filter>Header Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
